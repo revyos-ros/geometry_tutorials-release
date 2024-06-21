@@ -1,3 +1,29 @@
+## geometry_tutorials (jazzy) - 0.3.6-6
+
+The packages in the `geometry_tutorials` repository were released into the `jazzy` distro by running `/home/z572/gits/revyos-ros/venv/bin/bloom-release -r jazzy geometry_tutorials --override-release-repository-push-url git@github.com:revyos-ros/geometry_tutorials-release` on `Fri, 21 Jun 2024 05:41:36 -0000`
+
+These packages were released:
+- `geometry_tutorials`
+- `turtle_tf2_cpp`
+- `turtle_tf2_py`
+
+Version of package(s) in repository `geometry_tutorials`:
+
+- upstream repository: https://github.com/ros/geometry_tutorials
+- release repository: https://github.com/revyos-ros/geometry_tutorials-release.git
+- rosdistro version: `0.3.6-6`
+- old version: `0.3.6-5`
+- new version: `0.3.6-6`
+
+Versions of tools used:
+
+- bloom version: `0.12.0`
+- catkin_pkg version: `1.0.0`
+- rosdep version: `0.22.2`
+- rosdistro version: `0.9.0`
+- vcstools version: `0.1.42`
+
+
 ## geometry_tutorials (foxy) - 0.3.6-1
 
 The packages in the `geometry_tutorials` repository were released into the `foxy` distro by running `/usr/bin/bloom-release --track foxy --rosdistro foxy geometry_tutorials` on `Thu, 15 Sep 2022 13:06:18 -0000`
