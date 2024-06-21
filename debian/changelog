@@ -1,0 +1,39 @@
+ros-jazzy-geometry-tutorials (0.3.6-6bookworm) bookworm; urgency=high
+
+
+
+ -- Alejandro Hernández Cordero <alejandro@openrobotics.org>  Wed, 14 Sep 2022 16:00:00 -0000
+
+ros-jazzy-geometry-tutorials (0.3.5-6bookworm) bookworm; urgency=high
+
+
+
+ -- Alejandro Hernández Cordero <alejandro@openrobotics.org>  Wed, 07 Sep 2022 16:00:00 -0000
+
+ros-jazzy-geometry-tutorials (0.3.4-6bookworm) bookworm; urgency=high
+
+
+
+ -- Alejandro Hernández Cordero <alejandro@openrobotics.org>  Sun, 10 Oct 2021 16:00:00 -0000
+
+ros-jazzy-geometry-tutorials (0.3.3-6bookworm) bookworm; urgency=high
+
+
+
+ -- Alejandro Hernández Cordero <alejandro@openrobotics.org>  Thu, 26 Aug 2021 16:00:00 -0000
+
+ros-jazzy-geometry-tutorials (0.3.2-6bookworm) bookworm; urgency=high
+
+
+
+ -- Alejandro Hernández Cordero <alejandro@openrobotics.org>  Sun, 08 Aug 2021 16:00:00 -0000
+
+ros-jazzy-geometry-tutorials (0.3.1-6bookworm) bookworm; urgency=high
+
+  * Add Audrow as a maintainer and move Shyngys to author (#37 <https://github.com/ros/geometry_tutorials/issues/37>)
+  * Migrate turtle_tf2 tutorial package to ROS2 (#34 <https://github.com/ros/geometry_tutorials/issues/34>)
+  * Contributors: kurshakuz, Audrow Nash
+
+ -- Alejandro Hernández Cordero <alejandro@openrobotics.org>  Tue, 22 Jun 2021 16:00:00 -0000
+
+
