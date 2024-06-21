@@ -1,0 +1,55 @@
+ros-jazzy-turtle-tf2-cpp (0.3.6-6bookworm) bookworm; urgency=high
+
+  * Minor cleanups across the tutorials. (#71 <https://github.com/ros/geometry_tutorials/issues/71>)
+  * Contributors: Chris Lalancette
+
+ -- Alejandro Hernández Cordero <alejandro@openrobotics.org>  Wed, 14 Sep 2022 16:00:00 -0000
+
+ros-jazzy-turtle-tf2-cpp (0.3.5-6bookworm) bookworm; urgency=high
+
+  * Cleanup CI (#70 <https://github.com/ros/geometry_tutorials/issues/70>)
+  * Contributors: Chris Lalancette
+
+ -- Alejandro Hernández Cordero <alejandro@openrobotics.org>  Wed, 07 Sep 2022 16:00:00 -0000
+
+ros-jazzy-turtle-tf2-cpp (0.3.4-6bookworm) bookworm; urgency=high
+
+  * Add source code and launch file for tf2 PointStamped message publisher and listener/filter (#62 <https://github.com/ros/geometry_tutorials/issues/62>)
+    Add Python Code of PointStamped Messages Broadcaster Node
+    Add launch File turtle_tf2_sensor_message.launch.py
+    Update CMakeLists.txt for turtle_tf2_message_filter node
+    Update package.xml for dependencies of turtle_tf2_message_filter.cpp
+    Update turtle_tf2_message_filter.cpp after checking linters.
+    for the copyright year from 2015 to 2021 and delete the line "self.sub".
+    sort include headers; change two node instances to one instance; change turtle3 spawning manner.
+    remove whitespaces in line 39 and 42
+    some little updates
+  * update static_turtle_tf2_broadcaster.cpp to assign stamp value to now() (#63 <https://github.com/ros/geometry_tutorials/issues/63>)
+  * Added compile and test Github action (#60 <https://github.com/ros/geometry_tutorials/issues/60>)
+  * assign now variable to node now() value in frame broadcasters (#61 <https://github.com/ros/geometry_tutorials/issues/61>)
+  * Udpate C and CPP standard (#59 <https://github.com/ros/geometry_tutorials/issues/59>)
+  * Contributors: Alejandro Hernández Cordero, kenny_wang, kurshakuz
+
+ -- Alejandro Hernández Cordero <alejandro@openrobotics.org>  Sun, 10 Oct 2021 16:00:00 -0000
+
+ros-jazzy-turtle-tf2-cpp (0.3.3-6bookworm) bookworm; urgency=high
+
+  * update listener node (#53 <https://github.com/ros/geometry_tutorials/issues/53>)
+  * assign now value to the this->get_clock()->now() (#54 <https://github.com/ros/geometry_tutorials/issues/54>)
+  * Fixed and dynamic frame broacaster nodes and launch files C++ (#52 <https://github.com/ros/geometry_tutorials/issues/52>)
+  * update copyright year (#51 <https://github.com/ros/geometry_tutorials/issues/51>)
+  * Update tags in the package.xml (#50 <https://github.com/ros/geometry_tutorials/issues/50>)
+  * replace exec_depend to build_depend in package.xml (#49 <https://github.com/ros/geometry_tutorials/issues/49>)
+  * Contributors: kurshakuz
+
+ -- Alejandro Hernández Cordero <alejandro@openrobotics.org>  Thu, 26 Aug 2021 16:00:00 -0000
+
+ros-jazzy-turtle-tf2-cpp (0.3.2-6bookworm) bookworm; urgency=high
+
+  * turtle_tf2_cpp tutorial package (#44 <https://github.com/ros/geometry_tutorials/issues/44>)
+    Co-authored-by: Alejandro Hernández Cordero <mailto:ahcorde@gmail.com>
+  * Contributors: kurshakuz
+
+ -- Alejandro Hernández Cordero <alejandro@openrobotics.org>  Sun, 08 Aug 2021 16:00:00 -0000
+
+
