@@ -1,0 +1,13 @@
+Source: ros-humble-turtle-tf2-cpp
+Section: misc
+Priority: optional
+Maintainer: Alejandro Hernández Cordero <alejandro@openrobotics.org>
+Build-Depends: debhelper (>= 9.0.0), ros-humble-ament-cmake, ros-humble-ament-lint-auto <!nocheck>, ros-humble-ament-lint-common <!nocheck>, ros-humble-geometry-msgs, ros-humble-launch, ros-humble-launch-ros, ros-humble-message-filters, ros-humble-rclcpp, ros-humble-tf2, ros-humble-tf2-geometry-msgs, ros-humble-tf2-ros, ros-humble-turtlesim, ros-humble-ros-workspace
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-humble-turtle-tf2-cpp
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-humble-geometry-msgs, ros-humble-launch, ros-humble-launch-ros, ros-humble-message-filters, ros-humble-rclcpp, ros-humble-tf2, ros-humble-tf2-geometry-msgs, ros-humble-tf2-ros, ros-humble-turtlesim, ros-humble-ros-workspace
+Description: turtle_tf2_cpp demonstrates how to write a ROS2 C++ tf2 broadcaster and listener with the turtlesim.
+ The turtle_tf2_listener commands turtle2 to follow turtle1 around as you drive turtle1 using the keyboard.
