@@ -1,4 +1,4 @@
-release_repo_url: git@github.com:revyos-ros/geometry_tutorials-release
+release_repo_url: git@github.com:revyos-ros/geometry_tutorials-release.git
 tracks:
   foxy:
     actions:
