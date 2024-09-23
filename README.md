@@ -1,3 +1,29 @@
+## geometry_tutorials (humble) - 0.3.7-1
+
+The packages in the `geometry_tutorials` repository were released into the `humble` distro by running `/home/z572/gits/revyos-ros/venv/bin/bloom-release -r humble geometry_tutorials --override-release-repository-push-url git@github.com:revyos-ros/geometry_tutorials-release.git` on `Mon, 23 Sep 2024 05:29:48 -0000`
+
+These packages were released:
+- `geometry_tutorials`
+- `turtle_tf2_cpp`
+- `turtle_tf2_py`
+
+Version of package(s) in repository `geometry_tutorials`:
+
+- upstream repository: https://github.com/ros/geometry_tutorials
+- release repository: https://github.com/revyos-ros/geometry_tutorials-release.git
+- rosdistro version: `0.3.7-1`
+- old version: `0.3.6-2`
+- new version: `0.3.7-1`
+
+Versions of tools used:
+
+- bloom version: `0.12.0`
+- catkin_pkg version: `1.0.0`
+- rosdep version: `0.22.2`
+- rosdistro version: `0.9.0`
+- vcstools version: `0.1.42`
+
+
 ## geometry_tutorials (humble) - 0.3.6-2
 
 The packages in the `geometry_tutorials` repository were released into the `humble` distro by running `/home/z572/gits/revyos-ros/venv/bin/bloom-release -r humble geometry_tutorials --override-release-repository-push-url git@github.com:revyos-ros/geometry_tutorials-release.git` on `Mon, 23 Sep 2024 05:25:32 -0000`
