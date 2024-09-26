@@ -6,20 +6,20 @@ on:
       - ros2
 
 jobs:
-  build_and_test_source_rolling:
+  build_and_test_source_jazzy:
     runs-on: ubuntu-latest
     container:
-      image: rostooling/setup-ros-docker:ubuntu-jammy-latest
+      image: rostooling/setup-ros-docker:ubuntu-noble-latest
     steps:
     - name: Build and run tests
       id: action-ros-ci
-      uses: ros-tooling/action-ros-ci@v0.2
+      uses: ros-tooling/action-ros-ci@v0.3
       with:
         package-name: |
           turtle_tf2_py
           turtle_tf2_cpp
-        target-ros2-distro: rolling
-        vcs-repo-file-url: https://raw.githubusercontent.com/ros2/ros2/rolling/ros2.repos
+        target-ros2-distro: jazzy
+        vcs-repo-file-url: https://raw.githubusercontent.com/ros2/ros2/jazzy/ros2.repos
         colcon-defaults: |
           {
             "build": {
@@ -32,172 +32,19 @@ jobs:
               "pytest-args": ["-m", "not xfail"]
             }
           }
-  build_and_test_source_humble:
+  build_and_test_binaries_jazzy:
     runs-on: ubuntu-latest
     container:
-      image: rostooling/setup-ros-docker:ubuntu-jammy-latest
+      image: rostooling/setup-ros-docker:ubuntu-noble-latest
     steps:
     - name: Build and run tests
       id: action-ros-ci
-      uses: ros-tooling/action-ros-ci@v0.2
+      uses: ros-tooling/action-ros-ci@v0.3
       with:
         package-name: |
           turtle_tf2_py
           turtle_tf2_cpp
-        target-ros2-distro: humble
-        vcs-repo-file-url: https://raw.githubusercontent.com/ros2/ros2/humble/ros2.repos
-        colcon-defaults: |
-          {
-            "build": {
-              "cmake-args": [
-                "-DCMAKE_CXX_FLAGS=\"-Werror\""
-              ]
-            },
-            "test": {
-              "ctest-args": ["-LE", "xfail"],
-              "pytest-args": ["-m", "not xfail"]
-            }
-          }
-  build_and_test_source_galactic:
-    runs-on: ubuntu-latest
-    container:
-      image: rostooling/setup-ros-docker:ubuntu-focal-latest
-    steps:
-    - name: Build and run tests
-      id: action-ros-ci
-      uses: ros-tooling/action-ros-ci@v0.2
-      with:
-        package-name: |
-          turtle_tf2_py
-          turtle_tf2_cpp
-        target-ros2-distro: galactic
-        vcs-repo-file-url: https://raw.githubusercontent.com/ros2/ros2/galactic/ros2.repos
-        colcon-defaults: |
-          {
-            "build": {
-              "cmake-args": [
-                "-DCMAKE_CXX_FLAGS=\"-Werror\""
-              ]
-            },
-            "test": {
-              "ctest-args": ["-LE", "xfail"],
-              "pytest-args": ["-m", "not xfail"]
-            }
-          }
-  build_and_test_source_foxy:
-    runs-on: ubuntu-latest
-    container:
-      image: rostooling/setup-ros-docker:ubuntu-focal-latest
-    steps:
-    - name: Build and run tests
-      id: action-ros-ci
-      uses: ros-tooling/action-ros-ci@v0.2
-      with:
-        package-name: |
-          turtle_tf2_py
-          turtle_tf2_cpp
-        target-ros2-distro: foxy
-        vcs-repo-file-url: https://raw.githubusercontent.com/ros2/ros2/foxy/ros2.repos
-        colcon-defaults: |
-          {
-            "build": {
-              "cmake-args": [
-                "-DCMAKE_CXX_FLAGS=\"-Werror\""
-              ]
-            },
-            "test": {
-              "ctest-args": ["-LE", "xfail"],
-              "pytest-args": ["-m", "not xfail"]
-            }
-          }
-  build_and_test_binaries_rolling:
-    runs-on: ubuntu-latest
-    container:
-      image: rostooling/setup-ros-docker:ubuntu-jammy-latest
-    steps:
-    - name: Build and run tests
-      id: action-ros-ci
-      uses: ros-tooling/action-ros-ci@v0.2
-      with:
-        package-name: |
-          turtle_tf2_py
-          turtle_tf2_cpp
-        target-ros2-distro: rolling
-        colcon-defaults: |
-          {
-            "build": {
-              "cmake-args": [
-                "-DCMAKE_CXX_FLAGS=\"-Werror\""
-              ]
-            },
-            "test": {
-              "ctest-args": ["-LE", "xfail"],
-              "pytest-args": ["-m", "not xfail"]
-            }
-          }
-  build_and_test_binaries_humble:
-    runs-on: ubuntu-latest
-    container:
-      image: rostooling/setup-ros-docker:ubuntu-jammy-latest
-    steps:
-    - name: Build and run tests
-      id: action-ros-ci
-      uses: ros-tooling/action-ros-ci@v0.2
-      with:
-        package-name: |
-          turtle_tf2_py
-          turtle_tf2_cpp
-        target-ros2-distro: humble
-        colcon-defaults: |
-          {
-            "build": {
-              "cmake-args": [
-                "-DCMAKE_CXX_FLAGS=\"-Werror\""
-              ]
-            },
-            "test": {
-              "ctest-args": ["-LE", "xfail"],
-              "pytest-args": ["-m", "not xfail"]
-            }
-          }
-  build_and_test_binaries_galatic:
-    runs-on: ubuntu-latest
-    container:
-      image: rostooling/setup-ros-docker:ubuntu-focal-latest
-    steps:
-    - name: Build and run tests
-      id: action-ros-ci
-      uses: ros-tooling/action-ros-ci@v0.2
-      with:
-        package-name: |
-          turtle_tf2_py
-          turtle_tf2_cpp
-        target-ros2-distro: galactic
-        colcon-defaults: |
-          {
-            "build": {
-              "cmake-args": [
-                "-DCMAKE_CXX_FLAGS=\"-Werror\""
-              ]
-            },
-            "test": {
-              "ctest-args": ["-LE", "xfail"],
-              "pytest-args": ["-m", "not xfail"]
-            }
-          }
-  build_and_test_binaries_foxy:
-    runs-on: ubuntu-latest
-    container:
-      image: rostooling/setup-ros-docker:ubuntu-focal-latest
-    steps:
-    - name: Build and run tests
-      id: action-ros-ci
-      uses: ros-tooling/action-ros-ci@v0.2
-      with:
-        package-name: |
-          turtle_tf2_py
-          turtle_tf2_cpp
-        target-ros2-distro: foxy
+        target-ros2-distro: jazzy
         colcon-defaults: |
           {
             "build": {
