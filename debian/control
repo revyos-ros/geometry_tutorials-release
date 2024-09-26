@@ -1,0 +1,12 @@
+Source: ros-jazzy-geometry-tutorials
+Section: misc
+Priority: optional
+Maintainer: Alejandro Hernández Cordero <alejandro@openrobotics.org>
+Build-Depends: debhelper (>= 9.0.0), ros-jazzy-ament-cmake, ros-jazzy-ros-workspace
+Homepage: http://www.ros.org/wiki/geometry_tutorials
+Standards-Version: 3.9.2
+
+Package: ros-jazzy-geometry-tutorials
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-jazzy-ros-workspace
+Description: Metapackage of geometry tutorials ROS.
