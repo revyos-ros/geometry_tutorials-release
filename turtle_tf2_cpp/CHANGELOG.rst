@@ -2,7 +2,7 @@
 Changelog for package turtle_tf2_cpp
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-0.3.7 (2024-07-10)
+0.5.0 (2024-07-10)
 ------------------
 * Migrate std::bind calls to lambda expressions (`#76 <https://github.com/ros/geometry_tutorials/issues/76>`_)
   * ♻️ Geometry msgs lambda refactor

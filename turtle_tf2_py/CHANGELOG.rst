@@ -2,7 +2,7 @@
 Changelog for package turtle_tf2_py
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-0.3.7 (2024-07-10)
+0.5.0 (2024-07-10)
 ------------------
 * Fix a few more minor nitpicks. (`#72 <https://github.com/ros/geometry_tutorials/issues/72>`_)
   1.  Remove dependencies from the targets that don't need them.
